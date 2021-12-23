@@ -1,28 +1,30 @@
+import { styles } from "./styles"
+
 const Item = ( {img, nombre, banda, precio, cantidadLPs, duracion, fechaEntrada} ) => {
 
     return (
       <>
-        <div class="cardsDiv card-img-top card">
+        <div style={styles.div}>
             <div>
               <img
               class="card-img-top"
-              src="{img}"
-              alt="{nombre} Imagen Portada"
+              src={img}
+              alt={nombre}
               />
-              <div class="card-body">
-                <h5 class="card-title">{nombre}</h5>
-                <h6 class="card-title">{banda}</h6>
+              <div style={styles.div}>
+                <h5>{nombre}</h5>
+                <h6>{banda}</h6>
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Fecha de Entrada : </li>
-                <li class="list-group-item">{precio} $</li>
-                <li class="list-group-item">Contiene {cantidadLPs} LP('s)</li>
-                <li class="list-group-item"></li>
+              <ul >
+                <li style={styles.li}>Fecha de Entrada : </li>
+                <li style={styles.li}>{precio} $</li>
+                <li style={styles.li}>Contiene {cantidadLPs} LP('s)</li>
+                <li style={styles.li}></li>
               </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Escuchar en Spotify</a>
+              <div style={styles.div}>
+                <a href="#" style={styles.a}>Escuchar en Spotify</a>
               </div>
-              <button class="btn addBtn" id="addBtn${id}" type="submit">Añadir al Carrito</button>
+              <button style={styles.button} class="btn" id="addBtn${id}" type="submit">Añadir al Carrito</button>
             </div>
           </div>
         
