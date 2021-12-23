@@ -1,0 +1,60 @@
+.productosCards {
+    background: #E4DFDB;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    --bs-gutter-x: 0 !important;
+    margin-bottom: 2.5rem;
+    font-family: prata;
+    font-size: 20px;
+  }
+  
+  .productosCards .cardsDiv {
+    width: 22rem;
+    margin-top: 30px;
+  }
+  
+  .productosCards .border {
+    border: #48D932 solid 4.5px !important;
+  }
+  
+  .productosCards .card:hover {
+    -webkit-box-shadow: 6px 6px grey;
+            box-shadow: 6px 6px grey;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -webkit-transform: scale(1.03, 1.05);
+            transform: scale(1.03, 1.05);
+  }
+  
+  .productosCards h5, .productosCards h6 {
+    font-size: 23px;
+    text-decoration: underline;
+  }
+  
+  .productosCards div {
+    margin: 2.5%;
+    background-color: #AAAEAD;
+  }
+  
+  .productosCards div a {
+    margin-left: 5%;
+    text-decoration: none;
+    color: #7E573A;
+  }
+  
+  .productosCards ul li {
+    background-color: #AAAEAD;
+  }
+  
+  .productosCards ul, .productosCards h5, .productosCards h6, .productosCards div {
+    text-align: center;
+  }
+  
+  .productosCards button {
+    background: #4F5453;
+    color: #E4DFDB;
+  }
+  
